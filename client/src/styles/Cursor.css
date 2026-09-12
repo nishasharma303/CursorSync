@@ -1,0 +1,21 @@
+.cursor-arrow {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translate3d(-100px, -100px, 0);
+  will-change: transform;
+  pointer-events: none;
+  z-index: 40;
+}
+
+.cursor-arrow-label {
+  margin-left: 18px;
+  margin-top: -4px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 5px;
+  white-space: nowrap;
+  box-shadow: var(--shadow-cursor);
+}

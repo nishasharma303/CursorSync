@@ -1,0 +1,35 @@
+.shared-counter {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 50;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 8px 10px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shared-counter-value {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  min-width: 20px;
+  text-align: center;
+}
+
+.shared-counter-btn {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-accent);
+  cursor: pointer;
+  line-height: 1;
+}

@@ -1,0 +1,29 @@
+.shared-cards {
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  z-index: 50;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  max-width: 320px;
+}
+
+.shared-cards-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: var(--color-surface);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.shared-cards-badge {
+  font-size: 10px;
+  font-weight: 700;
+}

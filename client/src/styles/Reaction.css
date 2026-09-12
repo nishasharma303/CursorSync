@@ -1,0 +1,48 @@
+.reaction-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 45;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.reaction-burst {
+  position: absolute;
+  bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: reaction-float 1.6s ease-out forwards;
+}
+
+.reaction-burst-emoji {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.reaction-burst-name {
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  background: var(--color-surface);
+  padding: 1px 6px;
+  border-radius: 999px;
+  box-shadow: var(--shadow-sm);
+  white-space: nowrap;
+}
+
+@keyframes reaction-float {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.6);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(-20px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-160px) scale(1);
+  }
+}
